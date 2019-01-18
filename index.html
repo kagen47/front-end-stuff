@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Front-End Stuff</title>
+  </head>
+  <body>
+    <h1>Front-End Stuff</h1>
+
+    <h2>Expandable</h2>
+    <img class="fes expandable" src="https://via.placeholder.com/200x150" data-expanded-width="80vw" data-expanded-height="500px">
+
+    <h2>Fixed Centerable</h2>
+    <img class="fes fixed-centerable active" src="https://via.placeholder.com/200x150">
+
+    <h2>Background Overlay</h2>
+    <div class="fes background-overlay" data-trigger=".background-overlay-trigger"></div>
+    <img class="background-overlay-trigger" src="https://via.placeholder.com/200x150">
+
+    <script src="./scripts/script.js"></script>
+    <script>
+        window.onload = function() {
+            initExpandable();
+            initFixedCenterable();
+            initBackgroundOverlay();
+        }
+
+    </script>
+  </body>
+</html>

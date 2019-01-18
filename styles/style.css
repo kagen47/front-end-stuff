@@ -1,0 +1,35 @@
+.fes.expandable {
+    -webkit-transition: width 0.3s, height 0.3s;
+    transition: width 0.3s, height 0.3s;
+}
+
+.fes.fixed-centerable {
+    position: relative;
+}
+
+.fes.fixed-centerable.active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.fes.background-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fes.background-overlay.active {
+    visibility: visible;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
