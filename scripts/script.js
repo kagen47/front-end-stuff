@@ -25,7 +25,15 @@ function initFixedCenterable() {
     document.querySelectorAll('.fes.fixed-centerable').forEach(function (elem) {
         elem.addEventListener('click', function() {
             if (!this.classList.contains('active')) {
+                var top = this.offsetTop - window.pageYOffset + 'px';
+                var left = this.offsetLeft + 'px';
+                this.style.position = 'fixed';
+                this.style.top = top;
+                this.style.left = left;
+                console.log(top);
                 this.classList.add('active');
+                
+                this.style.left = '50%';
             } else {
                 this.classList.remove('active');
             }
