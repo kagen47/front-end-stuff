@@ -1,38 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="./styles/style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Front-End Stuff</title>
-  </head>
-  <body>
-    <h1>Front-End Stuff</h1>
+  <link rel="stylesheet" href="./styles/style.css">
 
-    <h2>Expandable</h2>
-    <img class="fes expandable" src="https://via.placeholder.com/200x150" data-expanded-width="80vw" data-expanded-height="500px">
+  <title>Front-End Stuff</title>
+</head>
 
-    <h2>Fixed Centerable</h2>
-    <img class="fes fixed-centerable" src="https://via.placeholder.com/200x150">
+<body>
+  <h1>Front-End Stuff</h1>
 
-    <h2>Background Overlay</h2>
-    <div class="fes background-overlay" data-trigger=".background-overlay-trigger"></div>
-    <img class="background-overlay-trigger" src="https://via.placeholder.com/200x150">
+  <h2>Expandable</h2>
+  <img class="fes expandable" src="https://via.placeholder.com/200x150" data-expanded-width="80vw" data-expanded-height="500px">
 
-    <h2>Testing....</h2>
-    <img class="fes expandable fixed-centerable" src="https://via.placeholder.com/200x150">
+  <h2>Fixed Centerable</h2>
+  <div class="fes fixed-centerable-container">
+    <img class="fixed-centerable" src="https://via.placeholder.com/200x150">
+  </div>
 
-    <script src="./scripts/script.js"></script>
-    <script>
-        window.onload = function() {
-            initExpandable();
-            initFixedCenterable();
-            initBackgroundOverlay();
-        }
+  <h2>Fixed Centerable</h2>
+  <div class="fes fixed-centerable-container testing">
+    <img class="fixed-centerable" src="https://via.placeholder.com/200x150">
+  </div>
+  <h2>Background Overlay</h2>
+  <div class="fes background-overlay" data-trigger=".background-overlay-trigger"></div>
+  <img class="background-overlay-trigger" src="https://via.placeholder.com/200x150">
 
-    </script>
-  </body>
+  <h2>Testing....</h2>
+  <div class="fes background-overlay" data-trigger=".test"></div>
+  <div class="fes fix-centerable-container">
+    <img class="fixed-centerable test" src="https://via.placeholder.com/200x150">
+  </div>
+
+  <script src="./scripts/script.js"></script>
+  <script>
+    window.onload = function () {
+      initExpandable();
+      initFixedCenterable();
+      initBackgroundOverlay();
+    }
+
+  </script>
+</body>
+
 </html>

@@ -3,19 +3,9 @@
     transition: width 0.3s, height 0.3s;
 }
 
-.fes.fixed-centerable {
-    position: relative;
-}
-
-.fes.fixed-centerable.active {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+.fes.fixed-centerable-container .fixed-centerable.active {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .fes.background-overlay {
